@@ -1,0 +1,29 @@
+/*Tags */
+body{
+    background-color: black;
+}
+hr{
+    line-height: normal;
+}
+h1{
+    color: greenyellow;
+}
+h3{
+    color: chartreuse;
+}
+table{
+    color: #EBE645;
+}
+li{
+    color: #EBE645;
+}
+a{
+    color: #EBE645;
+}
+
+/*Class */
+
+/*ID */
+#ProfilePic{
+    border-radius: 50%;
+}
