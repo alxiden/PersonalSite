@@ -1,29 +1,63 @@
 /*Tags */
 body{
-    background-color: black;
+    background-image: url("../Images/Background.jpg");
+    background-color: black ;
+    width: 95%;
+    font-family: Copperplate,Copperplate Gothic Light,fantasy;
+    /* background-repeat: no-repeat; */
 }
 hr{
     line-height: normal;
 }
 h1{
-    color: greenyellow;
+    color: #A8F4FE;
 }
 h3{
-    color: chartreuse;
+    color: #A8F4FE;
 }
-table{
-    color: #EBE645;
+p{
+    color: #A8F4FE;
 }
-li{
-    color: #EBE645;
-}
-a{
-    color: #EBE645;
-}
+
 
 /*Class */
+.header-box{
+    width: 50%;
+    height: 20%;
+    
+}
+
+.col-lg{
+    padding-top: 5%;
+    padding-bottom: 12%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
 /*ID */
-#ProfilePic{
-    border-radius: 50%;
+#topbox{
+    margin: 0%;    
+    
+}
+#header{
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* #firstrow{
+    background-color: brown;
+} */
+
+#bottombox{
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#L1{
+    text-align: end;
+}
+#L2{
+    text-align: end;
 }
