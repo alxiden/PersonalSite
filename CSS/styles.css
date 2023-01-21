@@ -1,6 +1,5 @@
 /*Tags */
  
-
 body{
     background-position: center;
     background-image: url("../Images/Background.jpg");
@@ -44,19 +43,28 @@ button{
 }
 
 .glow-button {
-    border-width: thick;
+    border-width: medium;
     border-color: transparent;
     outline: none;
     cursor: pointer;
     position: relative;
     z-index: 0;
     border-radius: 10px;
-    transition: border-color 1s;
+    
 }
 
 .glow-button:hover {
-    border-color: #A8F4FE;
+    animation-play-state: running;
+    animation-duration: 0.5s;
+    animation-name: button-colours;
+    animation-iteration-count: infinite;  
+    
 }
+
+.glow-button::after {
+    animation-play-state: paused;
+}
+
 
 /*ID */
 #topbox{
@@ -93,6 +101,16 @@ button{
     text-align: left;
 }
 
-
-
-
+/* Animations */
+@keyframes button-colours {
+    0% {border-color: #ff0000;}
+    14% {border-color: #ff7300;}
+    28% {border-color: #fffb00;}
+    42% {border-color: #48ff00;}
+    56% {border-color: #00ffd5;}
+    70% {border-color: #002bff;}
+    84% {border-color: #7a00ff;}
+    98% {border-color: #ff00c8;}
+    100% {border-color: #ff0000;}
+    
+}
