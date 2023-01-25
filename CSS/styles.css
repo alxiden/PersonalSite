@@ -117,16 +117,32 @@ button{
 
 #InfoHeader{
     text-align: center;
-    background-color: gray;
+    background-color: rgb(202, 185, 185);
 }
 #card{
     padding: 0%;
     height: 30%;
 }
 
+#inprogress{
+    border: 0;
+}
+
+#sendbtn{
+    margin-top: 1%;
+}
+
+#link{
+    color: white;
+    text-decoration: none;
+}
+
+
+
 @media only screen and (max-width: 1000px) {
     #ImageLink{
         position: unset;
+        
     }
     
 }
