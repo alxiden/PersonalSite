@@ -1,8 +1,8 @@
-document.getElementById('R1').addEventListener('click', projectsCard)
-document.getElementById('L1').addEventListener('click', skillsCard)
-document.getElementById('R2').addEventListener('click', qualificationsCard)
-document.getElementById('L2').addEventListener('click', aboutmeCard)
-document.getElementById('bottombox').addEventListener('click', projectsCard)
+document.getElementById('PB').addEventListener('click', projectsCard)
+document.getElementById('SB').addEventListener('click', skillsCard)
+document.getElementById('QB').addEventListener('click', qualificationsCard)
+document.getElementById('AB').addEventListener('click', aboutmeCard)
+document.getElementById('LB').addEventListener('click', linkCard)
 
 function clear() {
     document.getElementById('card').innerHTML = '';
@@ -30,7 +30,7 @@ function skillsCard(){
 }
 
 function aboutmeCard(){
-    var card = '<div class="card" id="InfoCardA"><div class="card-header" id="InfoHeader">About Me</div><div class="card-body"><p class="card-text">A fully trained chef turned tech guy, I found a true passion for technology during the pandemic and have never looked back since. Looking to make my way into the world of cyber security and be on the front line against the next wave of cyber attacks. As the ultimate support player I am always looking for the next way to help those around me.</p><p class="card-text">Hobbies and Interests:</p><ul class="list-group list-group-flush"><li class="list-group-item">Camping</li><li class="list-group-item">Cooking</li><li class="list-group-item">Gaming</li><li class="list-group-item">Gardening</li></ul></div></div>'
+    var card = '<div class="card" id="InfoCardA"><div class="card-header" id="InfoHeader">About Me</div><div class="card-body"><p class="card-text">A fully trained chef turned tech guy, I found a true passion for technology during the pandemic and have never looked back. As the ultimate support player I am always looking for the next way to help those around me while looking to make my way into the world of cyber security and be on the front line against the next wave of cyber attacks..</p><p class="card-text">Hobbies and Interests:</p><ul class="list-group list-group-flush"><li class="list-group-item">Camping</li><li class="list-group-item">Cooking</li><li class="list-group-item">Gaming</li><li class="list-group-item">Gardening</li></ul></div></div>'
     if(document.getElementById('InfoCardA') == null){
         document.getElementById('card').innerHTML = card;
         document.getElementById('InfoCard').style.visibility = 'visible'}
@@ -40,8 +40,18 @@ function aboutmeCard(){
 }
 
 function qualificationsCard() {
-    var card = ''
+    var card = '<div class="card" id="InfoCardQ"><div class="card-header" id="InfoHeader">Qualifications</div><div class="card-body"><ul class="list-group list-group-flush"><li class="list-group-item" id="inprogress">Progress to Cyber Security Degree Completion</li><div class="progress" id="progressbar"><div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div></div><li class="list-group-item"></li><li class="list-group-item">Level 3 IT Support Technician</li><li class="list-group-item">Dark Web, Anonymity, Privacy & Security Course</li><li class="list-group-item">Cyber Security Bootcamp</li><li class="list-group-item">Python Bootcamp</li><li class="list-group-item">Level 2 Electrical Installation</li><li class="list-group-item">9 A-C GCSEs</li></ul></div></div>'
     if(document.getElementById('InfoCardQ') == null){
+        document.getElementById('card').innerHTML = card;
+        document.getElementById('InfoCard').style.visibility = 'visible'}
+    else{
+        clear()
+    }
+}
+
+function linkCard() {
+    var card = '<div class="card" id="InfoCardL"><div class="card-header" id="InfoHeader">Links and Socials</div><div class="card-body"><p>I dont use much in the way of social media but what I do use is linked below:</p><div class="row"><div class="col-lg-4"><button type="button" class="btn btn-dark" id="sendbtn"> <a id="link" href="mailto:alxi@pm.me">e-mail me</a></button></div><div class="col-lg-4"><button type="button" class="btn btn-dark" id="sendbtn"> <a id="link" href="https://www.linkedin.com/in/daniel-ward-32a531260" target="_blank">LinkedIn</a></button></div><div class="col-lg-4"><button type="button" class="btn btn-dark" id="sendbtn"> <a id="link" href="https://mastodon.social/@alxiden" target="_blank">Mastodon</a></button></div></div></div></div>'
+    if(document.getElementById('InfoCardL') == null){
         document.getElementById('card').innerHTML = card;
         document.getElementById('InfoCard').style.visibility = 'visible'}
     else{
