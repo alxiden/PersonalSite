@@ -2,7 +2,6 @@
  
 body{
     background-position: center;
-    background-image: url("../Images/Background.jpg");
     background-color: black ;
     font-family: Copperplate,Copperplate Gothic Light,fantasy;
     /* background-repeat: no-repeat; */
@@ -73,6 +72,15 @@ button{
 
 
 /*ID */
+
+#background-vid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
 #topbox{
     margin-top: 1%;
     padding-top: 1%;
